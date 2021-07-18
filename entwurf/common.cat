@@ -1,0 +1,2691 @@
+
+(object Petal
+    version    	44
+    _written   	"Rose 7.0.9420.17"
+    charSet    	0)
+
+(object Class_Category "common"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"397839830027"
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object Class "ExtendedDString"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"397839830031"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"39783983008A"
+		    supplier   	"Logical View::common::DString"
+		    quidu      	"3978398D0356"))
+	    operations 	(list Operations
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"397839830121"
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"39783983012B"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"39783983012C"
+		    parameters 	(list Parameters
+			(object Parameter "ob"
+			    quid       	"397839830135"
+			    type       	"const ExtendedDString&"
+			    const      	TRUE))
+		    result     	"ExtendedDString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "~ExtendedDString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830136"
+		    stereotype 	"virtual"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "SetBSTR"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830140"
+		    parameters 	(list Parameters
+			(object Parameter "pBSTR"
+			    quid       	"397839830149"
+			    type       	"BSTR"))
+		    result     	"unsigned long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "ReleaseBSTR"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783983014A"
+		    parameters 	(list Parameters
+			(object Parameter ""
+			    quid       	"397839830153"
+			    type       	"void"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetBSTR"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783983015D"
+		    documentation 	
+|* BSTR Funktioen dienen dem Umgang mit MS BSTR. Insbesondere wird hier die Konvertierung
+|	von BSTR in einfache Zeichenfolgen und Umgekehrt implementiert. Eine Länderspezifische
+|	Konvertierung wird nicht berücksichtigt. Unter Umständen gehen Werte bei der Konvertierung
+|	von BSTR -> char verloren.
+		    
+		    parameters 	(list Parameters
+			(object Parameter ""
+			    quid       	"397839830167"
+			    type       	"void"))
+		    result     	"BSTR"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "Replace"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830171"
+		    parameters 	(list Parameters
+			(object Parameter "lStartPos"
+			    quid       	"397839830172"
+			    type       	"long")
+			(object Parameter "lEndPos"
+			    quid       	"397839830173"
+			    type       	"long")
+			(object Parameter "pcCharReplaceString"
+			    quid       	"39783983017B"
+			    type       	"char*"))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "InsertReturns"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783983017C"
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CountChars"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830185"
+		    parameters 	(list Parameters
+			(object Parameter "c"
+			    quid       	"39783983018F"
+			    type       	"char"))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "Split"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830190"
+		    parameters 	(list Parameters
+			(object Parameter "cstrArray"
+			    quid       	"397839830199"
+			    type       	"CStringArray&")
+			(object Parameter "cSplitChar"
+			    quid       	"3978398301A3"
+			    type       	"char"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "FindOneOf"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398301A4"
+		    parameters 	(list Parameters
+			(object Parameter "pcOneOf"
+			    quid       	"3978398301AD"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"char*"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "ExtendedDString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"3978398301B7"
+		    parameters 	(list Parameters
+			(object Parameter "initstr"
+			    quid       	"3978398301B8"
+			    type       	"const char*"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "ExtendedDString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398301C1"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "m_bBSTR_sync"
+		    quid       	"39783983009E"
+		    documentation 	
+|*
+|	Flag, das die Synchronität zwischen BSTR und <BR>
+|	internenDaten anzeigt.<BR>
+		    
+		    type       	"BOOL"
+		    initv      	"false"
+		    exportControl 	"Protected"))
+	    language   	"VC++")
+	(object Class "CTimeUtility"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"39783983026B"
+	    operations 	(list Operations
+		(object Operation "stringToTime"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830275"
+		    stereotype 	"static"
+		    parameters 	(list Parameters
+			(object Parameter "str"
+			    quid       	"39783983027F"
+			    type       	"std::string"))
+		    result     	"time_t"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "timeToString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839830280"
+		    stereotype 	"static"
+		    parameters 	(list Parameters
+			(object Parameter "time"
+			    quid       	"397839830289"
+			    type       	"time_t"))
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0))
+	    language   	"VC++")
+	(object Class "CUniqueId"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"39783984028B"
+	    operations 	(list Operations
+		(object Operation "Unif"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402BD"
+		    result     	"double"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SetRandId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402BE"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SetTimestamp"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402C7"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SetProcessId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402C8"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SetHostId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402D1"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SetUid"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402DB"
+		    parameters 	(list Parameters
+			(object Parameter "sUid"
+			    quid       	"3978398402DC"
+			    type       	"std::string"))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetUid"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402DD"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CreateId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402E5"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetRandIdAsString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402EF"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetRandId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402F0"
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetTimestampAsString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402F9"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetTimestamp"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398402FA"
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetProcessIdAsString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839840303"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetProcessId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783984030D"
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetHostIdAsString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783984030E"
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetHostId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839840317"
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CUniqueId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839840321"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CUniqueId"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783984032B"
+		    parameters 	(list Parameters
+			(object Parameter "sUid"
+			    quid       	"39783984032C"
+			    type       	"std::string"))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "m_seed"
+		    quid       	"397839840295"
+		    type       	"int")
+		(object ClassAttribute "m_randId"
+		    quid       	"39783984029F"
+		    type       	"int")
+		(object ClassAttribute "m_timestamp"
+		    quid       	"3978398402A0"
+		    type       	"int")
+		(object ClassAttribute "m_processId"
+		    quid       	"3978398402A9"
+		    type       	"int")
+		(object ClassAttribute "m_hostId"
+		    quid       	"3978398402B3"
+		    type       	"int"))
+	    language   	"VC++")
+	(object Class "CRegistryKey"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"39783985017E"
+	    operations 	(list Operations
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783985023C"
+		    parameters 	(list Parameters
+			(object Parameter "right"
+			    quid       	"397839850246"
+			    type       	"const CRegistryKey&"
+			    const      	TRUE))
+		    result     	"const CRegistryKey&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "set"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850247"
+		    parameters 	(list Parameters
+			(object Parameter "cRegParameter"
+			    quid       	"397839850250"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "dwValue"
+			    quid       	"397839850251"
+			    type       	"const DWORD"
+			    const      	TRUE))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "set"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783985025A"
+		    parameters 	(list Parameters
+			(object Parameter "cRegParameter"
+			    quid       	"39783985025B"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "csValue"
+			    quid       	"397839850264"
+			    type       	"const CString"
+			    const      	TRUE))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "get"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850265"
+		    parameters 	(list Parameters
+			(object Parameter "cRegParameter"
+			    quid       	"39783985026E"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "r_dwValue"
+			    quid       	"39783985026F"
+			    type       	"DWORD&"))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "get"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850278"
+		    parameters 	(list Parameters
+			(object Parameter "cRegParameter"
+			    quid       	"397839850279"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "r_csValue"
+			    quid       	"397839850282"
+			    type       	"CString&"))
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "~CRegistryKey"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850283"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CRegistryKey"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783985028C"
+		    parameters 	(list Parameters
+			(object Parameter "csRegSubPath"
+			    quid       	"39783985028D"
+			    type       	"const CString"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "CRegistryKey"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850296"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "CRegistryKey"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398502A0"
+		    parameters 	(list Parameters
+			(object Parameter "right"
+			    quid       	"3978398502A1"
+			    type       	"const CRegistryKey&"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "m_bRegKeyOpen"
+		    quid       	"397839850188"
+		    type       	"BOOL"))
+	    language   	"VC++")
+	(object Class "DStringMutex"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"397839850386"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"397839850390"
+		    supplier   	"Logical View::common::DString"
+		    quidu      	"3978398D0356")
+		(object Inheritance_Relationship
+		    quid       	"397839850391"
+		    supplier   	"CMutex"))
+	    operations 	(list Operations
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839850392"
+		    parameters 	(list Parameters
+			(object Parameter "ob"
+			    quid       	"39783985039A"
+			    type       	"const DStringMutex&"
+			    const      	TRUE))
+		    result     	"DStringMutex&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "DStringMutex"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783985039B"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "DStringMutex"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398503A4"
+		    parameters 	(list Parameters
+			(object Parameter "s"
+			    quid       	"3978398503A5"
+			    type       	"const DStringMutex&"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0))
+	    language   	"VC++")
+	(object Class "DString"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"3978398D0356"
+	    superclasses 	(list inheritance_relationship_list
+		(object Inheritance_Relationship
+		    quid       	"3978398D0360"
+		    supplier   	"ios"))
+	    operations 	(list Operations
+		(object Operation "operator+"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398D0361"
+		    documentation 	
+|*Addition zweier DString objekte<BR>
+|	Sollte aus Gründen der Effiziens vermieden werden!<BR>
+|	Muß zeitaufwendig instanziert, initialisiert,<BR>
+|	kopiert, nochmals zugewiesen(=) und letztendlich wieder zerstört werden werden!
+|	Wo möglich sollte deshalb der += Operator Verwendung finden.<BR>
+|	ob2 darf NICHT 'const' sein, da hier der Ausgabestring geschrieben werden muß.
+|	@param ob1 erstes objekt
+|	@param ob2 zu addierendes objekt
+|	@return DString :temparäres DString Objekt  <BR>
+		    
+		    stereotype 	"friend"
+		    parameters 	(list Parameters
+			(object Parameter "ob1"
+			    quid       	"3978398D036A"
+			    type       	"const DString&"
+			    const      	TRUE)
+			(object Parameter "ob2"
+			    quid       	"3978398D036B"
+			    type       	"DString&"))
+		    result     	"DString"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398D036C"
+		    documentation 	
+|*Ausgabe mit Operator << an Ausgabestream<BR>
+|	Beispiel: cout << DString; (gibt ganzen String an Console aus)
+|	@memo Schnelle, effektive Ausgabe des gesamten DStrings.
+|	@param os ostream Objekt (wird vom Compiler generiert)
+|	@param ob DString Objekt
+|	@return Zeiger auf ostream
+		    
+		    stereotype 	"friend"
+		    parameters 	(list Parameters
+			(object Parameter "os"
+			    quid       	"3978398D0375"
+			    type       	"ostream&")
+			(object Parameter "ob"
+			    quid       	"3978398D037E"
+			    type       	"DString&"))
+		    result     	"ostream&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator>>"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398D037F"
+		    documentation 	
+|*Eingabe mit Operator >> aus Inputstream <BR>
+|	Beispiel: cin >> DString; (liest bis EOF)
+|	@memo Hängt istream an internen Buffer an.
+|	@param is istream Objekt (wird vom Compiler generiert)
+|	@param ob DString Objekt
+|	@return Zeiger auf istream
+		    
+		    stereotype 	"friend"
+		    parameters 	(list Parameters
+			(object Parameter "is"
+			    quid       	"3978398D0388"
+			    type       	"istream&")
+			(object Parameter "ob"
+			    quid       	"3978398D0389"
+			    type       	"DString&"))
+		    result     	"istream&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "suche_case_insensitive_ab_position"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0018"
+		    documentation 	
+|*
+|	Suche nach Substrings 'caseinsensitive'<BR>
+|	@param char* Zu suchender nullterminierter Substring
+|	@param pos Position, ab der gesucht wird
+|	@return Position des Suchstrings im DString. Andernfalls -1 <BR>
+|	Achtung: Position kann auch -0- sein!
+		    
+		    parameters 	(list Parameters
+			(object Parameter "Suchstring"
+			    quid       	"3978398E0022"
+			    type       	"char*")
+			(object Parameter "suchbegin"
+			    quid       	"3978398E002C"
+			    type       	"long"))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "suche_ab_position"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E002D"
+		    documentation 	
+|*
+|	Suche nach Substrings 'casesensitive'<BR>
+|	@param char* Zu suchender nullterminierter Substring
+|	@param pos Position, ab der gesucht wird
+|	@return Position des Suchstrings im DString.  Andernfalls -1 <BR>
+|	Achtung: Position kann auch -0- sein!
+		    
+		    parameters 	(list Parameters
+			(object Parameter "Suchstring"
+			    quid       	"3978398E0036"
+			    type       	"char*")
+			(object Parameter "suchbegin"
+			    quid       	"3978398E0037"
+			    type       	"long"))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "suche_case_insensitive"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0040"
+		    documentation 	
+|*
+|	Suche nach Substrings 'caseinsensitive'<BR>
+|	@param char* Zu suchender nullterminierter Substring
+|	@return Position des Suchstrings im DString. Andernfalls -1 <BR>
+|	Achtung: Position kann auch -0- sein!
+		    
+		    parameters 	(list Parameters
+			(object Parameter "Suchstring"
+			    quid       	"3978398E004A"
+			    type       	"char*"))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "suche"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E004B"
+		    documentation 	
+|*@name Hilfsroutinen <BR> 
+|@{
+|*
+|	Suche nach Substrings 'casesensitive'<BR>
+|	@param char* Zu suchender nullterminierter Substring
+|	@return Position des Suchstrings im DString.  Andernfalls -1 <BR>
+|	Achtung: Position kann auch -0- sein!
+		    
+		    parameters 	(list Parameters
+			(object Parameter "Suchstring"
+			    quid       	"3978398E0054"
+			    type       	"char*"))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "insertstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E005E"
+		    parameters 	(list Parameters
+			(object Parameter "is"
+			    quid       	"3978398E005F"
+			    type       	"char*")
+			(object Parameter "size"
+			    quid       	"3978398E0068"
+			    type       	"long")
+			(object Parameter "pos"
+			    quid       	"3978398E0072"
+			    type       	"long"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "rewind"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0073"
+		    documentation 	"* Setzt Leseposition an den Anfang"
+		    parameters 	(list Parameters
+			(object Parameter ""
+			    quid       	"3978398E007C"
+			    type       	"void"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "rewind"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E007D"
+		    documentation 	"* Stellt Leseposition um 'positions' zurueck"
+		    parameters 	(list Parameters
+			(object Parameter "positions"
+			    quid       	"3978398E0086"
+			    type       	"int"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "bad"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0090"
+		    documentation 	
+|*	Gibt internen Zustand zurück
+		    
+		    parameters 	(list Parameters
+			(object Parameter ""
+			    quid       	"3978398E0091"
+			    type       	"void"))
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "clear"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E009A"
+		    documentation 	
+|*	Löscht interne Fehlerflags und setzt die Leseposition auf den Anfang
+		    
+		    parameters 	(list Parameters
+			(object Parameter ""
+			    quid       	"3978398E009B"
+			    type       	"int"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "tellg"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00A4"
+		    documentation 	
+|*
+|	Liefert die Leseposition
+		    
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "gcount"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00A5"
+		    documentation 	
+|*
+|	Liefert die Anzahl der zuletzt gelesenen Zeichen
+		    
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "eof"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00AE"
+		    documentation 	
+|*
+|	Gibt !=0 zurück, falls das Ende erreicht wurde
+		    
+		    result     	"int"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "get"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00B8"
+		    documentation 	
+|* 
+|	Ausgabe ueber get() in char Feld<BR>
+|	Die Methode kopiert solange Zeichen von DString in 'buf' bis:<BR> 
+|	<UL>
+|	<LI>len Zeichen geschrieben sind, <BR>
+|	<LI>das Zeichen 'stop' gefunden wurde (Zeichen 'stop' BLEIBT im Puffer!) oder<BR>
+|	<LI>das Ende des DString's erreicht ist.<BR>
+|	</UL>
+|	Wiederholtes 'get' beginnt an der zuletzt abgebrochenen Leseposition.<BR>
+|	Über die Methode 'gcount()', ist die Anzahl der geschriebenen Zeichen zu erfahren.<BR>
+|	Mit 'rewind()' laest sich der interne Lesezeiger zurückstellen.<BR>
+|	Es wird KEINE abschliesende 0 angehaengt!<BR>
+|	@memo 	Ausgabe ueber get() in char Feld ('cin' konform)<BR>
+|	@param buf Externer Buffer
+|	@param len	Länge des Externen Buffers bzw. der zu schreibenden Zeichen
+|	@param stop liest bis Zeichen 'stop' oder EOF
+|	@return DString&
+		    
+		    parameters 	(list Parameters
+			(object Parameter "buf"
+			    quid       	"3978398E00B9"
+			    type       	"char*")
+			(object Parameter "laenge_buf"
+			    quid       	"3978398E00C2"
+			    type       	"int")
+			(object Parameter "stop"
+			    quid       	"3978398E00CC"
+			    type       	"char"))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "read"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00CD"
+		    documentation 	
+|*@name Polymorphische Implementierung einiger der 'cin' Funktionen <BR>
+|	(DString wird zu 'cin' opjekt)
+|@{
+|* 
+|	Ausgabe ueber read() in char Feld<BR>
+|	Eigenschaften: Siehe Mehtode'get()'<BR>
+|	@memo 	Ausgabe ueber get() in char Feld<BR>
+|	@param char Externer Buffer
+|	@param int	Länge des Externen Buffers bzw. der zu schreibenden Zeichen
+|	@return DString&
+		    
+		    parameters 	(list Parameters
+			(object Parameter "buf"
+			    quid       	"3978398E00D6"
+			    type       	"char*")
+			(object Parameter "laenge"
+			    quid       	"3978398E00D7"
+			    type       	"int"))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator char*"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"3978398E00E0"
+		    documentation 	
+|*
+|	cast operator
+|	@return char *
+		    
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "SetPunkt"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"3978398E00EA"
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "SetKomma"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"3978398E00EB"
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "format"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00F4"
+		    documentation 	
+|* DString << format (Setze Formatierung fuer float und double Konvertierung)<BR>
+|	@memo Setzte Formatierung
+|	@param char Formatierstring (Bsp.: "%12.3f ")
+		    
+		    parameters 	(list Parameters
+			(object Parameter "form"
+			    quid       	"3978398E00F5"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E00FE"
+		    documentation 	"/ DString << char"
+		    parameters 	(list Parameters
+			(object Parameter "c"
+			    quid       	"3978398E0108"
+			    type       	"const char"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0109"
+		    documentation 	"/ DString << char *"
+		    parameters 	(list Parameters
+			(object Parameter "p"
+			    quid       	"3978398E0112"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E011C"
+		    documentation 	"/ DString << signed int"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E011D"
+			    type       	"const int"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0126"
+		    documentation 	"/ DString << unsigned int"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E0127"
+			    type       	"const unsigned int"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0130"
+		    documentation 	"/ DString << signed long"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E013A"
+			    type       	"const long"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E013B"
+		    documentation 	"/ DString << unsigned long"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E0145"
+			    type       	"const unsigned long"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E014F"
+		    documentation 	"/ DString << float"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E0150"
+			    type       	"const float"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0159"
+		    documentation 	"/ DString << double"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E015A"
+			    type       	"const double"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator<<"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	TRUE))
+		    quid       	"3978398E0163"
+		    documentation 	
+|*Parameterlose inline Funktionen.<BR>
+|	Implementiert die Standardfunktionen: endl, flush und ends<BR>
+|	Weitere nichtstandards: tab, ...?
+|	@param _f Funktionszeiger
+|	@param DString&	Referenz auf DString Objekt
+|	@return DString& Referenz auf übergebenes Objekt
+		    
+		    parameters 	(list Parameters
+			(object Parameter "(*_f)(DString&)"
+			    quid       	"3978398E016D"
+			    type       	"DString&"))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator[]"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0177"
+		    documentation 	"/Gibt Zeichen an Stelle n zurueck"
+		    parameters 	(list Parameters
+			(object Parameter "n"
+			    quid       	"3978398E0178"
+			    type       	"const long"
+			    const      	TRUE))
+		    result     	"char"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0181"
+		    documentation 	
+|*
+|	Löscht bisherigen String und lagert übergebenen ein.<BR>
+|	(Siehe auch 'putstr(char *)'.<BR>
+|	@memo Weist nullterminierten String zu
+|	@return Anzahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E0182"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E018B"
+		    documentation 	
+|*
+|	Weist DString DString zu
+|	@return DString Zeiger
+		    
+		    parameters 	(list Parameters
+			(object Parameter "ob"
+			    quid       	"3978398E0195"
+			    type       	"const DString&"
+			    const      	TRUE))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator*="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0196"
+		    documentation 	"/Just for fun: Implementierung des Multiplikators:"
+		    parameters 	(list Parameters
+			(object Parameter "Faktor"
+			    quid       	"3978398E019F"
+			    type       	"int"))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator+="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01A9"
+		    documentation 	
+|*@name Operator Declarations (public) 
+|@{
+|*
+|	Hängt nullterminierten String an.
+|	@memo Fügt scnell und effektiv nullterminierten String an.
+|	@return Anzahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E01AA"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "operator+="
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01BD"
+		    documentation 	
+|*
+|	Addiert DString zu DString
+|	@param ob1 zu addierendes DString Objekt<BR>
+|	darf nicht const sein, da intern getstr() aufgerufen wird
+|	@return DString& Zeiger auf Summenobjekt
+		    
+		    parameters 	(list Parameters
+			(object Parameter "ob1"
+			    quid       	"3978398E01BE"
+			    type       	"DString&"))
+		    result     	"DString&"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "ausgabe_loeschen"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01D1"
+		    documentation 	
+|*
+|	Löscht Ausgabestring<BR>
+|	Kann bei größeren Strings ganz nützlich sein, um Speicher freizugeben.<BR>
+|	Der Ausgabestring wird bei folgenden Methoden angelegt:<BR>
+|	<UL>
+|	<LI>getstr(alle Parameter),
+|	<LI>(DSting1 + DString2) ->bei der Addition zweier DString Objekte wird im Objekt
+|		'DString2' ein Ausgabefeld erzeugt,
+|	<LI>+=(DString ob) nur bei Objekt 'ob'.
+|	<LI>(DString)[] holen einzelner Zeichen aus dem Objekt,
+|	<LI>get() 
+|	<LI>read()
+|	</UL>
+|	Frage:<BR>
+|	Wie bekomme ich, ohne einen Ausgabestring anzulegen, die gespeicherten Daten?<BR>
+|	Antwort:<BR>
+|	Über den 'operator<<' kann das betreffende DString Objekt an jeden beliebigen
+|	Ausgabestream ausgegeben werden. Die Daten werden dann in Blöcken der Größe 'WACHSTUM'
+|	in den Ausgabestream kopiert. Hierzu wird intern kein weiterer Speicher allokiert.<BR>
+|	Beim Zerstören des DString's wird der Ausgabestring mit zerstört.
+		    
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "leere"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01D2"
+		    documentation 	
+|*Leert gesamten Speicher und setzt DString auf Anfang
+|	@memo Stellt Initialisierungszustand wieder her
+|	@return 0 Fehlerfrei, -1 Fehler aufgetreten
+		    
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "laenge"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01DB"
+		    documentation 	
+|*Gibt die momentane Laenge zurueck. Kann die Laenge grösser LONG_MAX werden,
+|	(VERYLARGE definiert) sollte man diese Methode etwas umschreiben.
+|	@memo Länge des eingelagerten Strings
+|	@return Länge des intern gespeicherten Strings
+		    
+		    stereotype 	"const"
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01E6"
+		    documentation 	
+|*
+|	Gibt kompletten String als 'scratch' String aus.
+|	Das heißt der zurückgelieferte Speicherplatz wird als 'non const' Zurückgeliefer 
+|	(der Benutzer kann damit machen was er will) <BR>
+|	@memo Ausgabe des gesamten Strings in char Feld.<BR>
+|	ACHTUNG: jedes getstr() loescht vorheriges char Feld und allokiert dann neuen Speicher.<BR>
+|	Das heißt: der zurückgegebene Zeiger ist nur bis zum nächsten getstr() gültig
+|	bzw. bis zum Ende der Gültigkeitsdauer des DStream Objektes.
+|	@return char* Zeiger auf nullterminiertes Charakter Feld.<BR>
+|	Es koennen jedoch auch Binaerdaten ausgegeben werden. Die Laenge des Feldes ohne 
+|	abschliesende NULL, ist dann mit der Funktion 'DString::laenge()' zu erfahren (
+|	Diese Funktion ist ohnehin 'strlen()' vorzuziehen!).
+		    
+		    result     	"char*"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E01EF"
+		    documentation 	
+|*
+|	Gibt Teilstring aus. Hierzu muß EXTERN Speicher allokiert werden.<BR>
+|	@memo Ausgabe des gesamten Strings in char Feld.<BR>
+|	@param String Zeiger auf extern allokierten Speicherplatz (wird nicht überprüft ob ausreichend).
+|	@param begin Stelle, an der mit Kopieren begonnen werden soll (0: erstes Zeichen).
+|	@param anzahl Anzahl Bytes, die zu kopieren sind (\0 wird nicht angehängt).
+|	@return Anzahl geschriebener Bytes. Bei Fehler -1.
+		    
+		    parameters 	(list Parameters
+			(object Parameter "Rueckgabe"
+			    quid       	"3978398E01F0"
+			    type       	"char*")
+			(object Parameter "begin"
+			    quid       	"3978398E01F9"
+			    type       	"const long"
+			    const      	TRUE)
+			(object Parameter "anzahl"
+			    quid       	"3978398E0203"
+			    type       	"const long"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "addstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E020D"
+		    documentation 	
+|*
+|	Hängt übergebenen nullterminierten String an<BR>
+|	@memo Hängt übergebenen nullterminierten String an.<BR>
+|	@param zeichen Zeiger auf nullterminierten char String.
+|	@return Zahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E020E"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "addstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0217"
+		    documentation 	
+|*
+|	Hängt übergebenen String an<BR>
+|	@memo Hängt übergebenen String an.<BR>
+|	@param zeichen Zeiger auf NICHT nullterminierten char String.
+|	@param anzahl Anzahl zu schreibender Bytes
+|	@return Zahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E0221"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "bytes_in_zeichen"
+			    quid       	"3978398E0222"
+			    type       	"const long"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "putstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E022B"
+		    documentation 	
+|*
+|	Löscht bisherigen String und lagert übergebenen ein (wie Operator =).<BR>
+|	@memo Lagert übergebenen String ein (alte Daten werden gelöscht).<BR>
+|	@param zeichen Zeiger auf nullterminierten char String.
+|	@return Zahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E022C"
+			    type       	"const char*"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "putstr"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0235"
+		    documentation 	
+|*
+|	Löscht bisherigen String und lagert übergebenen ein (wie Operator =).<BR>
+|	@memo Lagert übergebenen String ein (alte Daten werden gelöscht).<BR>
+|	@param zeichen Zeiger auf nullterminierten char String.
+|	@return Zahl geschriebener Bytes
+		    
+		    parameters 	(list Parameters
+			(object Parameter "zeichen"
+			    quid       	"3978398E023F"
+			    type       	"const char*"
+			    const      	TRUE)
+			(object Parameter "anzahl"
+			    quid       	"3978398E0240"
+			    type       	"const long"
+			    const      	TRUE))
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "~DString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0249"
+		    documentation 	
+|*
+|	Der Destruktor stellt sicher, daß aller Speicher freigegeben wird (KEINE Dummi-Funktion).<BR>
+|	@memo Destruktor. Gibt allen allokierten Speicher wieder frei.
+		    
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "DString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0253"
+		    documentation 	
+|*@name Method Declarations (public) 
+|@{
+|*
+|	Konstruktor. Allokiert gleich einen ersten Block und initialisiert interne Variablen<BR>
+|	@memo Konstruktor (Blöckgröße mit '#define WACHSTUM' festgelegen!)
+		    
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "DString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0254"
+		    documentation 	
+|*
+|	Konstruktor mit Initialisierungszeichenkette<BR>
+|	@memo Initialisierungskonstruktor
+		    
+		    parameters 	(list Parameters
+			(object Parameter "initchr"
+			    quid       	"3978398E025D"
+			    type       	"const char*"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "DString"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E025E"
+		    documentation 	
+|*
+|	Copy Konstruktor (WICHTIG: DString verwendet intern verkettete Liste):
+		    
+		    parameters 	(list Parameters
+			(object Parameter "s"
+			    quid       	"3978398E0267"
+			    type       	"const DString&"
+			    const      	TRUE))
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "PunktZuKomma"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0271"
+		    documentation 	"/Interne Umwandlung von Punkt zu Kommata(Excelformat)"
+		    parameters 	(list Parameters
+			(object Parameter "Zeichen"
+			    quid       	"3978398E027B"
+			    type       	"char*")
+			(object Parameter "search"
+			    quid       	"3978398E027C"
+			    type       	"char"
+			    initv      	"'.'")
+			(object Parameter "replace"
+			    quid       	"3978398E0285"
+			    type       	"char"
+			    initv      	"','"))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)
+		(object Operation "init"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E028F"
+		    documentation 	
+|*
+|	Initialisiere interne Variablen und Zeiger<BR>
+|	(Nur über Konstruktoren aufrufbar)
+		    
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0)
+		(object Operation "neuer_Speicher_Teil"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0290"
+		    documentation 	
+|*@name Method Declarations (private) 
+|@{
+|*
+|	Hohlt neuen Speicherteil und setzt interne Variablen.<BR>
+|	Darf von außen auf gar keinen Fall erreichbar sein.
+|	@memo Hohle intern neuen Speicherblock
+|	@return 0 bei Fehlerfreihei, -1 bei Fehler
+		    
+		    result     	"long"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Protected"
+		    uid        	0))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "read_last"
+		    quid       	"3978398D038A"
+		    documentation 	"* Anzahl der zuletzt gelesener Zeichen bei unformatiertem lesen"
+		    type       	"long"
+		    exportControl 	"Protected")
+		(object ClassAttribute "read_pos"
+		    quid       	"3978398D0392"
+		    documentation 	"* Aktuelle Leseposition, wenn aus DString ueber 'cin' gelesen wird"
+		    type       	"long"
+		    exportControl 	"Protected")
+		(object ClassAttribute "A_sync"
+		    quid       	"3978398D039C"
+		    documentation 	
+|*
+|	Flag, das die Synchronität zwischen internem Puffer und <BR>
+|	Ausgabestring anzeigt.<BR>
+|	->Laufzeitvorteil bei der Ausgabe von größeren Strings über die bei<BR>
+|	der Methode "ausgabe_loeschen()" beschriebenen  Ausgabemethoden.
+		    
+		    type       	"BOOL"
+		    exportControl 	"Protected")
+		(object ClassAttribute "Komma"
+		    quid       	"3978398D039D"
+		    documentation 	"konvertierung fon floats und doubles mit kommas:"
+		    type       	"BOOL"
+		    exportControl 	"Protected")
+		(object ClassAttribute "formatstr[20]"
+		    quid       	"3978398D03A6"
+		    documentation 	
+|*
+|	Formatierung bei float und double Konvertierungen.<BR>
+|	Kann über << format("Formatierung"); gesetzt werden.<BR>
+		    
+		    type       	"char"
+		    exportControl 	"Protected")
+		(object ClassAttribute "Anzahl_Speicher_Teile"
+		    quid       	"3978398D03B0"
+		    documentation 	
+|*
+|	Aktuelle Zahl aller allokierten Speicherteile.
+		    
+		    type       	"long"
+		    exportControl 	"Protected")
+		(object ClassAttribute "Fuellstand"
+		    quid       	"3978398D03BA"
+		    documentation 	
+|*
+|	Aktueller Füllstand des letzten Speicherteils
+		    
+		    type       	"long"
+		    exportControl 	"Protected")
+		(object ClassAttribute "Ausgabe"
+		    quid       	"3978398E000E"
+		    documentation 	
+|*@name Attribute Declarations (public) 
+|@{
+|*
+|	Nullterminierter String fuer die Ausgabe (wird intern allokiert und zerstört).<BR>
+|	@memo Öfentlicher Ausgabestring
+		    
+		    type       	"mutable char *"
+		    exportControl 	"Public"))
+	    language   	"VC++")
+	(object Class "CStringUtility"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"3978398E0339"
+	    documentation 	
+|## Class: CStringUtility%38F717D6004F; Class Utility
+|	The class is a common class utility performing diverse
+|	conversions of strings.
+|## Category: common%38F717B70177
+|## Subsystem: common%38F7195F0086
+|## Persistence: Transient
+|## Cardinality/Multiplicity: n
+	    
+	    operations 	(list Operations
+		(object Operation "bstrToStd"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E0343"
+		    documentation 	
+|## Operation: bstrToStd%38F718B2018C
+|	Converts a BSTR into an std::string.
+		    
+		    stereotype 	"static"
+		    parameters 	(list Parameters
+			(object Parameter "bstr"
+			    quid       	"3978398E034D"
+			    type       	"BSTR"))
+		    result     	"std::string"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "stdToBSTR"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398E034E"
+		    documentation 	
+|## Other Operations (specified)
+|## Operation: stdToBSTR%38F718730087
+|	Converts an std::string into BSTR.
+		    
+		    stereotype 	"static"
+		    parameters 	(list Parameters
+			(object Parameter "str"
+			    quid       	"3978398E0357"
+			    type       	"std::string"))
+		    result     	"BSTR"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0))
+	    language   	"VC++")
+	(object Class "CMonitor"
+	    attributes 	(list Attribute_Set
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AppliedPattern"
+		    value      	"none")
+		(object Attribute
+		    tool       	"VC++"
+		    name       	"AfxSupportMacro"
+		    value      	""))
+	    quid       	"3978398F02E1"
+	    documentation 	" Monitor Class"
+	    operations 	(list Operations
+		(object Operation "setWindowPriority"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"3978398F03DB"
+		    parameters 	(list Parameters
+			(object Parameter "iWindowPriority"
+			    quid       	"3978398F03E5"
+			    type       	"int"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setWindowName"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900007"
+		    parameters 	(list Parameters
+			(object Parameter "r_csWindowName"
+			    quid       	"397839900008"
+			    type       	"CString&"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setFilePriority"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783990001B"
+		    parameters 	(list Parameters
+			(object Parameter "iFilePriority"
+			    quid       	"39783990001C"
+			    type       	"int"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setFileName"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900025"
+		    parameters 	(list Parameters
+			(object Parameter "r_csFileName"
+			    quid       	"39783990002F"
+			    type       	"CString&"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setEmailPriority"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900039"
+		    parameters 	(list Parameters
+			(object Parameter "iEmailPriority"
+			    quid       	"397839900043"
+			    type       	"int"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "setEmailAddress"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783990004D"
+		    documentation 	" set new priorities and Lognames:"
+		    parameters 	(list Parameters
+			(object Parameter "r_csEmailAddress"
+			    quid       	"39783990004E"
+			    type       	"CString&"))
+		    result     	"BOOL"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "send"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900061"
+		    documentation 	" show CStrings"
+		    parameters 	(list Parameters
+			(object Parameter "enPriority"
+			    quid       	"397839900062"
+			    type       	"enum typLogLevels")
+			(object Parameter "rcsMessage"
+			    quid       	"39783990006B"
+			    type       	"const CString&"
+			    const      	TRUE))
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "~CMonitor"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900075"
+		    documentation 	" public class members"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "getMonitor"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783990007F"
+		    stereotype 	"static"
+		    result     	"CMonitor*"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Public"
+		    uid        	0)
+		(object Operation "GetWindowHandle"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783990008A"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "SendData"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900093"
+		    result     	"void"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "init"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"397839900094"
+		    result     	"bool"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0)
+		(object Operation "CMonitor"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"Inline"
+			    value      	FALSE))
+		    quid       	"39783990009D"
+		    documentation 	" internal class members"
+		    concurrency 	"Sequential"
+		    opExportControl 	"Private"
+		    uid        	0))
+	    class_attributes 	(list class_attribute_list
+		(object ClassAttribute "m_iEmailPriority"
+		    quid       	"3978398F0309"
+		    type       	"int")
+		(object ClassAttribute "m_csEmailAddress"
+		    quid       	"3978398F0313"
+		    type       	"CString")
+		(object ClassAttribute "m_iFilePriority"
+		    quid       	"3978398F031D"
+		    type       	"int")
+		(object ClassAttribute "m_csFileName"
+		    quid       	"3978398F0327"
+		    type       	"CString")
+		(object ClassAttribute "m_iWindowPriority"
+		    quid       	"3978398F0331"
+		    type       	"int")
+		(object ClassAttribute "m_csWindowName"
+		    quid       	"3978398F033B"
+		    type       	"CString")
+		(object ClassAttribute "m_iMaxPriority"
+		    quid       	"3978398F0345"
+		    type       	"int")
+		(object ClassAttribute "hWnd"
+		    quid       	"3978398F036D"
+		    type       	"HWND")
+		(object ClassAttribute "m_csMessage"
+		    quid       	"3978398F039F"
+		    type       	"CString")
+		(object ClassAttribute "buffer[_MAX_PATH]"
+		    quid       	"3978398F03A9"
+		    documentation 	" internal data variables"
+		    type       	"char"))
+	    language   	"VC++")
+	(object Association "$UNNAMED$0"
+	    quid       	"3978398300EF"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"3978398300F0"
+		    supplier   	"Logical View::common::ExtendedDString"
+		    quidu      	"397839830031"
+		    is_aggregate 	TRUE)
+		(object Role "m_pBSTR"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"InitialValue"
+			    value      	"NULL"))
+		    quid       	"397839830103"
+		    label      	"m_pBSTR"
+		    supplier   	"BSTR"
+		    exportControl 	"Protected"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$2"
+	    quid       	"39783985019C"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$3"
+		    quid       	"39783985019D"
+		    supplier   	"Logical View::common::CRegistryKey"
+		    quidu      	"39783985017E"
+		    is_aggregate 	TRUE)
+		(object Role "m_RegKey"
+		    quid       	"3978398501A6"
+		    label      	"m_RegKey"
+		    supplier   	"CRegKey"
+		    exportControl 	"Private"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$4"
+	    quid       	"3978398D03CE"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$5"
+		    quid       	"3978398D03CF"
+		    supplier   	"Logical View::common::DString"
+		    quidu      	"3978398D0356")
+		(object Role "Letzter"
+		    quid       	"3978398D03D0"
+		    documentation 	
+|*
+|	Zeiger auf das Ende des internen Speichers (hier wird beim Anfügen geschrieben)
+		    
+		    label      	"Letzter"
+		    supplier   	"Speicher_Teil"
+		    exportControl 	"Protected"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$6"
+	    quid       	"3978398D03E2"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$7"
+		    quid       	"3978398D03E3"
+		    supplier   	"Logical View::common::DString"
+		    quidu      	"3978398D0356")
+		(object Role "Anfang_Speicher"
+		    quid       	"3978398E0004"
+		    documentation 	
+|*
+|	Zeiger auf den Anfang des internen Speichers
+		    
+		    label      	"Anfang_Speicher"
+		    supplier   	"Speicher_Teil"
+		    exportControl 	"Protected"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$8"
+	    quid       	"3978398F02F5"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$9"
+		    quid       	"3978398F02F6"
+		    supplier   	"Logical View::common::CMonitor"
+		    quidu      	"3978398F02E1"
+		    is_aggregate 	TRUE)
+		(object Role "m_sendSection"
+		    quid       	"3978398F02F7"
+		    label      	"m_sendSection"
+		    supplier   	"CCriticalSection"
+		    exportControl 	"Private"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$10"
+	    quid       	"3978398F0359"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$11"
+		    quid       	"3978398F035A"
+		    supplier   	"Logical View::common::CMonitor"
+		    quidu      	"3978398F02E1"
+		    is_aggregate 	TRUE)
+		(object Role "m_enPriority"
+		    quid       	"3978398F035B"
+		    label      	"m_enPriority"
+		    supplier   	"typLogLevels"
+		    exportControl 	"Private"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$12"
+	    quid       	"3978398F0381"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$13"
+		    quid       	"3978398F0382"
+		    supplier   	"Logical View::common::CMonitor"
+		    quidu      	"3978398F02E1"
+		    is_aggregate 	TRUE)
+		(object Role "cp"
+		    quid       	"3978398F038B"
+		    label      	"cp"
+		    supplier   	"COPYDATASTRUCT"
+		    exportControl 	"Private"
+		    is_navigable 	TRUE)))
+	(object Association "$UNNAMED$14"
+	    quid       	"3978398F03C7"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$15"
+		    quid       	"3978398F03C8"
+		    supplier   	"Logical View::common::CMonitor"
+		    quidu      	"3978398F02E1")
+		(object Role "m_pMonitor"
+		    attributes 	(list Attribute_Set
+			(object Attribute
+			    tool       	"VC++"
+			    name       	"InitialValue"
+			    value      	"NULL"))
+		    quid       	"3978398F03C9"
+		    label      	"m_pMonitor"
+		    supplier   	"Logical View::common::CMonitor"
+		    quidu      	"3978398F02E1"
+		    exportControl 	"Private"
+		    is_navigable 	TRUE
+		    static     	TRUE))))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Main"
+	    quid       	"3978399000ED"
+	    title      	"Main"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::common::CMonitor" @1
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(400, 736)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@1
+			location   	(111, 105)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	578
+			justify    	0
+			label      	"CMonitor")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3978398F02E1"
+		    width      	596
+		    height     	1286
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object AssociationViewNew "$UNNAMED$14" @2
+		    location   	(725, 1238)
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"3978398F03C7"
+		    roleview_list 	(list RoleViews
+			(object RoleView "$UNNAMED$15" @3
+			    Parent_View 	@2
+			    location   	(277, 598)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @4
+				Parent_View 	@3
+				location   	(474, 1370)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				hidden     	TRUE
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	""
+				pctDist    	0.800000
+				height     	42
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"3978398F03C8"
+			    client     	@2
+			    supplier   	@1
+			    vertices   	(list Points
+				(725, 1238)
+				(725, 1411)
+				(698, 1355))
+			    line_style 	0)
+			(object RoleView "m_pMonitor" @5
+			    Parent_View 	@2
+			    location   	(277, 598)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object SegLabel @6
+				Parent_View 	@5
+				location   	(895, 786)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	1
+				anchor_loc 	1
+				nlines     	1
+				max_width  	251
+				justify    	0
+				label      	"-$m_pMonitor"
+				pctDist    	0.854442
+				height     	170
+				orientation 	1)
+			    stereotype 	TRUE
+			    line_color 	3342489
+			    quidu      	"3978398F03C9"
+			    client     	@2
+			    supplier   	@1
+			    line_style 	0)))
+		(object ClassView "Class" "Logical View::common::CRegistryKey" @7
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1296, 432)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@7
+			location   	(1035, 126)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	522
+			justify    	0
+			label      	"CRegistryKey")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"39783985017E"
+		    width      	540
+		    height     	636
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::common::CStringUtility" @8
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(368, 1712)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@8
+			location   	(120, 1606)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	496
+			justify    	0
+			label      	"CStringUtility")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3978398E0339"
+		    width      	514
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::common::CTimeUtility" @9
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1008, 1712)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@9
+			location   	(747, 1606)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	522
+			justify    	0
+			label      	"CTimeUtility")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"39783983026B"
+		    width      	540
+		    height     	236
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::common::CUniqueId" @10
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(2032, 768)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@10
+			location   	(1782, 137)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	500
+			justify    	0
+			label      	"CUniqueId")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"39783984028B"
+		    width      	518
+		    height     	1286
+		    annotation 	8
+		    autoResize 	TRUE)))
+	(object ClassDiagram "DString"
+	    quid       	"39783B3E020E"
+	    title      	"DString"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list
+		(object ClassView "Class" "Logical View::common::DStringMutex" @11
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(1712, 880)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@11
+			location   	(1550, 749)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	324
+			justify    	0
+			label      	"DStringMutex")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"397839850386"
+		    width      	342
+		    height     	286
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::common::DString" @12
+		    ShowCompartmentStereotypes 	TRUE
+		    location   	(1328, 448)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@12
+			location   	(1242, 396)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	172
+			justify    	0
+			label      	"DString")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"3978398D0356"
+		    width      	190
+		    height     	128
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object ClassView "Class" "Logical View::common::ExtendedDString" @13
+		    ShowCompartmentStereotypes 	TRUE
+		    IncludeAttribute 	TRUE
+		    IncludeOperation 	TRUE
+		    location   	(864, 1152)
+		    font       	(object Font
+			size       	10
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@13
+			location   	(549, 746)
+			fill_color 	13434879
+			nlines     	1
+			max_width  	630
+			justify    	0
+			label      	"ExtendedDString")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"397839830031"
+		    width      	648
+		    height     	836
+		    annotation 	8
+		    autoResize 	TRUE)
+		(object InheritView "" @14
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"39783983008A"
+		    client     	@13
+		    supplier   	@12
+		    vertices   	(list Points
+			(863, 733)
+			(863, 606)
+			(1325, 606)
+			(1326, 512))
+		    line_style 	0)
+		(object InheritView "" @15
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"397839850390"
+		    client     	@11
+		    supplier   	@12
+		    vertices   	(list Points
+			(1709, 736)
+			(1709, 606)
+			(1325, 606)
+			(1326, 512))
+		    line_style 	0)))))

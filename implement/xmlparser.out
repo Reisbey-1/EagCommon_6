@@ -1,0 +1,218 @@
+
+Grammar
+rule 1    document -> prolog element
+rule 2    prolog -> DOCTYPE
+rule 3    @1 ->		/* empty */
+rule 4    element -> START attribute_seq_opt @1 CLOSE empty_or_content
+rule 5    empty_or_content -> content END
+rule 6    content -> content DATA
+rule 7    content -> content element
+rule 8    content ->		/* empty */
+rule 9    attribute_seq_opt -> attribute_seq_opt attribute
+rule 10   attribute_seq_opt ->		/* empty */
+rule 11   attribute -> NAME EQ VALUE
+
+Terminals, with rules where they appear
+
+$ (-1)
+error (256)
+DOCTYPE (258) 2
+EQ (259) 11
+CLOSE (260) 4
+NAME (261) 11
+VALUE (262) 11
+DATA (263) 6
+START (264) 4
+END (265) 5
+
+Nonterminals, with rules where they appear
+
+document (11)
+    on left: 1
+prolog (12)
+    on left: 2, on right: 1
+element (13)
+    on left: 4, on right: 1 7
+@1 (14)
+    on left: 3, on right: 4
+empty_or_content (15)
+    on left: 5, on right: 4
+content (16)
+    on left: 6 7 8, on right: 5 6 7
+attribute_seq_opt (17)
+    on left: 9 10, on right: 4 9
+attribute (18)
+    on left: 11, on right: 9
+
+
+state 0
+
+    DOCTYPE	shift, and go to state 1
+
+    document	go to state 17
+    prolog	go to state 2
+
+
+
+state 1
+
+    prolog  ->  DOCTYPE .   (rule 2)
+
+    $default	reduce using rule 2 (prolog)
+
+
+
+state 2
+
+    document  ->  prolog . element   (rule 1)
+
+    START	shift, and go to state 3
+
+    element	go to state 4
+
+
+
+state 3
+
+    element  ->  START . attribute_seq_opt @1 CLOSE empty_or_content   (rule 4)
+
+    $default	reduce using rule 10 (attribute_seq_opt)
+
+    attribute_seq_opt	go to state 5
+
+
+
+state 4
+
+    document  ->  prolog element .   (rule 1)
+
+    $default	reduce using rule 1 (document)
+
+
+
+state 5
+
+    element  ->  START attribute_seq_opt . @1 CLOSE empty_or_content   (rule 4)
+    attribute_seq_opt  ->  attribute_seq_opt . attribute   (rule 9)
+
+    NAME	shift, and go to state 6
+
+    $default	reduce using rule 3 (@1)
+
+    @1  	go to state 7
+    attribute	go to state 8
+
+
+
+state 6
+
+    attribute  ->  NAME . EQ VALUE   (rule 11)
+
+    EQ  	shift, and go to state 9
+
+
+
+state 7
+
+    element  ->  START attribute_seq_opt @1 . CLOSE empty_or_content   (rule 4)
+
+    CLOSE	shift, and go to state 10
+
+
+
+state 8
+
+    attribute_seq_opt  ->  attribute_seq_opt attribute .   (rule 9)
+
+    $default	reduce using rule 9 (attribute_seq_opt)
+
+
+
+state 9
+
+    attribute  ->  NAME EQ . VALUE   (rule 11)
+
+    VALUE	shift, and go to state 11
+
+
+
+state 10
+
+    element  ->  START attribute_seq_opt @1 CLOSE . empty_or_content   (rule 4)
+
+    $default	reduce using rule 8 (content)
+
+    empty_or_content	go to state 12
+    content	go to state 13
+
+
+
+state 11
+
+    attribute  ->  NAME EQ VALUE .   (rule 11)
+
+    $default	reduce using rule 11 (attribute)
+
+
+
+state 12
+
+    element  ->  START attribute_seq_opt @1 CLOSE empty_or_content .   (rule 4)
+
+    $default	reduce using rule 4 (element)
+
+
+
+state 13
+
+    empty_or_content  ->  content . END   (rule 5)
+    content  ->  content . DATA   (rule 6)
+    content  ->  content . element   (rule 7)
+
+    DATA	shift, and go to state 14
+    START	shift, and go to state 3
+    END 	shift, and go to state 15
+
+    element	go to state 16
+
+
+
+state 14
+
+    content  ->  content DATA .   (rule 6)
+
+    $default	reduce using rule 6 (content)
+
+
+
+state 15
+
+    empty_or_content  ->  content END .   (rule 5)
+
+    $default	reduce using rule 5 (empty_or_content)
+
+
+
+state 16
+
+    content  ->  content element .   (rule 7)
+
+    $default	reduce using rule 7 (content)
+
+
+
+state 17
+
+    $   	go to state 18
+
+
+
+state 18
+
+    $   	go to state 19
+
+
+
+state 19
+
+    $default	accept

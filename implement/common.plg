@@ -1,0 +1,173 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: common - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP69.bat" mit Inhalten
+[
+@echo off
+..\tools\bisonpp -d -o xmlparser.cpp -h xmlparser.h -S bison.cpp -v xmlparser.y
+]
+Erstellen der Befehlzeile "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP69.bat"
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6A.bat" mit Inhalten
+[
+@echo off
+..\tools\flexpp -8 -hxmlscanner.h -oxmlscanner.cpp -Sflexskel.cpp xmlscanner.l
+]
+Erstellen der Befehlzeile "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6A.bat"
+Creating command line "rc.exe /l 0x407 /fo"Debug/common.res" /d "_DEBUG" /d "_AFXDLL" "C:\SW2\EagCommon\implement\common.rc"" 
+Bison++
+Flex++
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6B.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\\" /I "..\server" /I "..\..\..\common\implement" /I "..\..\..\datasource\implement" /I "..\..\common\implement" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MONITOR_EXPORTS" /D "REGISTRYKEY_EXPORTS" /D "STRINGUTILITY_EXPORTS" /D "DSTRING_EXPORTS" /D "EXTENDEDDSTRING_EXPORTS" /D "UNIQUEID_EXPORTS" /D "DSTRINGMUTEX_EXPORTS" /D "TIMEUTILITY_EXPORTS" /D "FILEUTILITY_EXPORTS" /D "DATETIME_EXPORTS" /D "XMLTREEBUILDER_EXPORTS" /D "XMLSTRUCT_EXPORTS" /D "REGEXPUTILITY_EXPORTS" /D "MATHUTILITY_EXPORTS" /D "MOCEVALUATOR_EXPORTS" /D "LICENSE_EXPORTS" /D "INITPARSER_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /D "VARIANTUTILITIES_EXPORTS" /D "_WIN32_DCOM" /FR"Debug/" /Fp"Debug/common.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SW2\EagCommon\implement\ATLDateTime.cpp"
+"C:\SW2\EagCommon\implement\dstring.cpp"
+"C:\SW2\EagCommon\implement\dstringmutex.cpp"
+"C:\SW2\EagCommon\implement\extendeddstring.cpp"
+"C:\SW2\EagCommon\implement\StringUtility.cpp"
+"C:\SW2\EagCommon\implement\eag_monitor.cpp"
+"C:\SW2\EagCommon\implement\FileUtility.cpp"
+"C:\SW2\EagCommon\implement\registrykey.cpp"
+"C:\SW2\EagCommon\implement\xmltreebuilder.cpp"
+"C:\SW2\EagCommon\implement\xmlelement.cpp"
+"C:\SW2\EagCommon\implement\xmlhandle.cpp"
+"C:\SW2\EagCommon\implement\xmlprocessor.cpp"
+"C:\SW2\EagCommon\implement\xmlstruct.cpp"
+"C:\SW2\EagCommon\implement\Regexp.cpp"
+"C:\SW2\EagCommon\implement\MathUtility.cpp"
+"C:\SW2\EagCommon\implement\mocevaluator.cpp"
+"C:\SW2\EagCommon\implement\XYPoligon.cpp"
+"C:\SW2\EagCommon\implement\AES_Cypher.cpp"
+"C:\SW2\EagCommon\implement\Cript_Password.cpp"
+"C:\SW2\EagCommon\implement\CryptFile.cpp"
+"C:\SW2\EagCommon\implement\InitParser.cpp"
+"C:\SW2\EagCommon\implement\VariantUtilities.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6B.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6C.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\\" /I "..\server" /I "..\..\..\common\implement" /I "..\..\..\datasource\implement" /I "..\..\common\implement" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MONITOR_EXPORTS" /D "REGISTRYKEY_EXPORTS" /D "STRINGUTILITY_EXPORTS" /D "DSTRING_EXPORTS" /D "EXTENDEDDSTRING_EXPORTS" /D "UNIQUEID_EXPORTS" /D "DSTRINGMUTEX_EXPORTS" /D "TIMEUTILITY_EXPORTS" /D "FILEUTILITY_EXPORTS" /D "DATETIME_EXPORTS" /D "XMLTREEBUILDER_EXPORTS" /D "XMLSTRUCT_EXPORTS" /D "REGEXPUTILITY_EXPORTS" /D "MATHUTILITY_EXPORTS" /D "MOCEVALUATOR_EXPORTS" /D "LICENSE_EXPORTS" /D "INITPARSER_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /D "VARIANTUTILITIES_EXPORTS" /D "_WIN32_DCOM" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SW2\EagCommon\implement\uniqueid.cpp"
+"C:\SW2\EagCommon\implement\xmlparser.cpp"
+"C:\SW2\EagCommon\implement\xmlscanner.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6C.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6D.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\\" /I "..\server" /I "..\..\..\common\implement" /I "..\..\..\datasource\implement" /I "..\..\common\implement" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MONITOR_EXPORTS" /D "REGISTRYKEY_EXPORTS" /D "STRINGUTILITY_EXPORTS" /D "DSTRING_EXPORTS" /D "EXTENDEDDSTRING_EXPORTS" /D "UNIQUEID_EXPORTS" /D "DSTRINGMUTEX_EXPORTS" /D "TIMEUTILITY_EXPORTS" /D "FILEUTILITY_EXPORTS" /D "DATETIME_EXPORTS" /D "XMLTREEBUILDER_EXPORTS" /D "XMLSTRUCT_EXPORTS" /D "REGEXPUTILITY_EXPORTS" /D "MATHUTILITY_EXPORTS" /D "MOCEVALUATOR_EXPORTS" /D "LICENSE_EXPORTS" /D "INITPARSER_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /D "VARIANTUTILITIES_EXPORTS" /D "_WIN32_DCOM" /FR"Debug/" /Fp"Debug/common.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SW2\EagCommon\implement\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6D.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6E.tmp" mit Inhalten
+[
+wsock32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/eagcommond.pdb" /debug /machine:I386 /def:".\commond.def" /out:"../../bin/eagcommond.dll" /implib:"../../lib/eagcommond.lib" /pdbtype:sept /libpath:"..\..\lib" 
+.\Debug\ATLDateTime.obj
+.\Debug\dstring.obj
+.\Debug\dstringmutex.obj
+.\Debug\extendeddstring.obj
+.\Debug\StringUtility.obj
+.\Debug\eag_monitor.obj
+.\Debug\FileUtility.obj
+.\Debug\registrykey.obj
+.\Debug\uniqueid.obj
+.\Debug\xmlparser.obj
+.\Debug\xmlscanner.obj
+.\Debug\xmltreebuilder.obj
+.\Debug\xmlelement.obj
+.\Debug\xmlhandle.obj
+.\Debug\xmlprocessor.obj
+.\Debug\xmlstruct.obj
+.\Debug\Regexp.obj
+.\Debug\MathUtility.obj
+.\Debug\mocevaluator.obj
+.\Debug\XYPoligon.obj
+.\Debug\AES_Cypher.obj
+.\Debug\Cript_Password.obj
+.\Debug\CryptFile.obj
+.\Debug\InitParser.obj
+.\Debug\StdAfx.obj
+.\Debug\VariantUtilities.obj
+.\Debug\common.res
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP6E.tmp"
+<h3>Ausgabefenster</h3>
+Ressourcen werden kompiliert...
+Kompilierung läuft...
+StdAfx.cpp
+Kompilierung läuft...
+ATLDateTime.cpp
+dstring.cpp
+dstringmutex.cpp
+extendeddstring.cpp
+StringUtility.cpp
+eag_monitor.cpp
+FileUtility.cpp
+registrykey.cpp
+xmltreebuilder.cpp
+xmlelement.cpp
+xmlhandle.cpp
+xmlprocessor.cpp
+xmlstruct.cpp
+Regexp.cpp
+MathUtility.cpp
+mocevaluator.cpp
+XYPoligon.cpp
+AES_Cypher.cpp
+Cript_Password.cpp
+CryptFile.cpp
+Generieren von Code...
+Kompilieren...
+InitParser.cpp
+VariantUtilities.cpp
+Generieren von Code...
+Kompilierung läuft...
+uniqueid.cpp
+xmlparser.cpp
+xmlscanner.cpp
+Generieren von Code...
+Linker-Vorgang läuft...
+   Bibliothek ../../lib/eagcommond.lib und Objekt ../../lib/eagcommond.exp wird erstellt
+Erstellen der temporären Datei  "C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP72.tmp" mit Inhalten
+[
+/nologo /o"Debug/common.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\ATLDateTime.sbr
+.\Debug\dstring.sbr
+.\Debug\dstringmutex.sbr
+.\Debug\extendeddstring.sbr
+.\Debug\StringUtility.sbr
+.\Debug\eag_monitor.sbr
+.\Debug\FileUtility.sbr
+.\Debug\registrykey.sbr
+.\Debug\uniqueid.sbr
+.\Debug\xmlparser.sbr
+.\Debug\xmlscanner.sbr
+.\Debug\xmltreebuilder.sbr
+.\Debug\xmlelement.sbr
+.\Debug\xmlhandle.sbr
+.\Debug\xmlprocessor.sbr
+.\Debug\xmlstruct.sbr
+.\Debug\Regexp.sbr
+.\Debug\MathUtility.sbr
+.\Debug\mocevaluator.sbr
+.\Debug\XYPoligon.sbr
+.\Debug\AES_Cypher.sbr
+.\Debug\Cript_Password.sbr
+.\Debug\CryptFile.sbr
+.\Debug\InitParser.sbr
+.\Debug\VariantUtilities.sbr]
+Erstellen der Befehlzeile "bscmake.exe @C:\DOKUME~1\mustafa\LOKALE~1\Temp\RSP72.tmp"
+Browse-Informationsdatei wird erstellt...
+<h3>Ausgabefenster</h3>
+
+
+
+<h3>Ergebnisse</h3>
+eagcommond.dll - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

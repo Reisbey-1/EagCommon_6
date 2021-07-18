@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{547e3876-624b-4a0e-962e-ac89e3e45c53}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DateTime">
+      <UniqueIdentifier>{b2a739d1-cc12-4c13-be0b-53272d353d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{1c0805d9-c277-45fc-9d5d-0c18a2ff8742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monitor">
+      <UniqueIdentifier>{69b79f24-47d2-43c6-9a98-717a828fbf7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{27246e06-832a-4e48-9ae1-03bc3bfe8fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Registry">
+      <UniqueIdentifier>{cc70e7c4-e762-4661-8eae-0763f88e053f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UniqueId">
+      <UniqueIdentifier>{5e815ffc-d382-40fe-a323-4181cb3252ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TreeBuilder">
+      <UniqueIdentifier>{1bfac6b1-88c7-4cea-809e-35ada82767d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XmlStruct">
+      <UniqueIdentifier>{a0b82e9f-a195-4bcc-bbca-b07ec82481dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Regexp">
+      <UniqueIdentifier>{8310867f-bd3f-41ab-a12c-a610ca5264cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{9e646fe4-4793-4336-af32-037ce9f5c480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="License">
+      <UniqueIdentifier>{35408a93-6ffd-4bed-87a4-7c0587cdfbbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\common.rc2">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Ressourcendateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ATLDateTime.h">
+      <Filter>DateTime</Filter>
+    </ClInclude>
+    <ClInclude Include="dstring.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="dstringmutex.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="stringutility.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="eag_monitor.h">
+      <Filter>Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="registrykey.h">
+      <Filter>Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="uniqueid.h">
+      <Filter>UniqueId</Filter>
+    </ClInclude>
+    <ClInclude Include="xmldef.h">
+      <Filter>TreeBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlhandler.h">
+      <Filter>TreeBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlparser.h">
+      <Filter>TreeBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlscanner.h">
+      <Filter>TreeBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="xmltreebuilder.h">
+      <Filter>TreeBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlelement.h">
+      <Filter>XmlStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlhandle.h">
+      <Filter>XmlStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlprocessor.h">
+      <Filter>XmlStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlstruct.h">
+      <Filter>XmlStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Regexp.h">
+      <Filter>Regexp</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtility.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="mocevaluator.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="XYPoligon.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="AES_Cypher.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="Cript_Password.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptFile.h">
+      <Filter>License</Filter>
+    </ClInclude>
+    <ClInclude Include="eagcommon.h" />
+    <ClInclude Include="InitParser.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VariantUtilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ATLDateTime.cpp">
+      <Filter>DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="dstring.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="dstringmutex.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtility.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+    <ClCompile Include="eag_monitor.cpp">
+      <Filter>Monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtility.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="registrykey.cpp">
+      <Filter>Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="uniqueid.cpp">
+      <Filter>UniqueId</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlparser.cpp">
+      <Filter>TreeBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlscanner.cpp">
+      <Filter>TreeBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="xmltreebuilder.cpp">
+      <Filter>TreeBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlelement.cpp">
+      <Filter>XmlStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlhandle.cpp">
+      <Filter>XmlStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlprocessor.cpp">
+      <Filter>XmlStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlstruct.cpp">
+      <Filter>XmlStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="Regexp.cpp">
+      <Filter>Regexp</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtility.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="mocevaluator.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="XYPoligon.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="AES_Cypher.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="Cript_Password.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptFile.cpp">
+      <Filter>License</Filter>
+    </ClCompile>
+    <ClCompile Include="InitParser.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="VariantUtilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="common.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="xmlparser.y">
+      <Filter>TreeBuilder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xmlscanner.l">
+      <Filter>TreeBuilder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="commond.def" />
+  </ItemGroup>
+</Project>

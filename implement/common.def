@@ -1,0 +1,6 @@
+; common.def : Deklariert die Modul-Parameter für die DLL.
+
+LIBRARY      "eagcommon"
+;DESCRIPTION  'eagcommon Windows Dynamic Link Library'
+
+EXPORTS
